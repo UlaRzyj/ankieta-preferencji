@@ -5,5 +5,33 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ankieta_preferencji.MainWindow"
         Title="ankieta_preferencji">
-    Welcome to Avalonia!
+    <Grid HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Tu wpisz swoje imię:" VerticalAlignment="Center" 
+                   HorizontalAlignment="Right" Margin="5"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Width="150" VerticalAlignment="Center" 
+                 HorizontalAlignment="Right" Margin="10"/>
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Wybierz kategorię zainteresowań:" VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" Margin="5"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" Width="150" Margin="10">
+            <ComboBoxItem Content="Technologia"/>
+            <ComboBoxItem Content="Sport"/>
+            <ComboBoxItem Content="Kultura"/>
+            <ComboBoxItem Content="Edukacja"/>
+        </ComboBox>
+        
+        <Button Grid.Row="3" Grid.Column="1" Content="Zatwierdź" 
+                HorizontalAlignment="Right" VerticalAlignment="Center"
+                Margin="0 0 10 0"/>
+    </Grid>
 </Window>
