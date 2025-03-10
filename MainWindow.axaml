@@ -25,45 +25,50 @@
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Tu wpisz swoje imię:" VerticalAlignment="Center" 
                    HorizontalAlignment="Right" Margin="5"/>
         <TextBox Grid.Row="0" Grid.Column="1" Width="150" VerticalAlignment="Center" 
-                 HorizontalAlignment="Right" Margin="10"/>
+                 HorizontalAlignment="Center" Margin="10" x:Name="Imie"/>
         
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Wybierz kategorię zainteresowań:" VerticalAlignment="Center" 
                    HorizontalAlignment="Center" Margin="5"/>
-        <ComboBox Grid.Row="1" Grid.Column="1" Width="150" Margin="10">
+        <ComboBox Grid.Row="1" Grid.Column="1" Width="150" Margin="10" x:Name="Kategoria"
+                  HorizontalAlignment="Center" VerticalAlignment="Center">
             <ComboBoxItem Content="Technologia"/>
             <ComboBoxItem Content="Sport"/>
             <ComboBoxItem Content="Kultura"/>
             <ComboBoxItem Content="Edukacja"/>
         </ComboBox>
         
-        <Button Grid.Row="3" Grid.Column="1" Content="Zatwierdź" 
+        <Button Grid.Row="3" Grid.Column="0" Content="Zatwierdź" 
                 HorizontalAlignment="Right" VerticalAlignment="Center"
-                Margin="0 0 10 0"/>
+                Margin="0 0 10 0" x:Name="Zatwierdz"
+                Click="ZatwierdzClick"/>
+        <TextBlock Grid.Row="3" Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Margin="10" Foreground="CornflowerBlue" x:Name="Kliknieto"/>
         
         
         <TextBlock Grid.Row="4" Grid.Column="0" Text="Czy lubisz programować?" VerticalAlignment="Center" 
                    HorizontalAlignment="Right" Margin="5 30 5 5"/>
         <CheckBox Grid.Row="4" Grid.Column="1" Content="Tak" VerticalAlignment="Center" 
                   HorizontalAlignment="Center" Margin=" 0 30 0 0"
-                  FontWeight="Bold" />
+                  FontWeight="Bold" x:Name="Programowanie"/>
         
         <TextBlock Grid.Row="5" Grid.Column="0" Text="Czy masz jakieś zwierzę?" VerticalAlignment="Center" 
                    HorizontalAlignment="Right" Margin="5"/>
         <CheckBox Grid.Row="5" Grid.Column="1" Content="Tak" VerticalAlignment="Center" 
                   HorizontalAlignment="Center"
-                  FontWeight="Bold"/>
+                  FontWeight="Bold" x:Name="Zwierze"/>
         
         <TextBlock Grid.Row="6" Grid.Column="0" Text="Czy jadłeś śniadanie?" VerticalAlignment="Center" 
                    HorizontalAlignment="Right" Margin="5"/>
         <CheckBox Grid.Row="6" Grid.Column="1" Content="Tak" VerticalAlignment="Center" 
                   HorizontalAlignment="Center" 
-                  FontWeight="Bold"/>
+                  FontWeight="Bold" x:Name="Sniadanie"/>
         
         
         <Button  Grid.Row="7" Grid.Column="0" Content="Wyświetl podsumowanie"
                  HorizontalAlignment="Right" VerticalAlignment="Center"
-                 Background="LightBlue" CornerRadius="30" Padding="10 5"/>
+                 Background="LightBlue" CornerRadius="30" Padding="10 5" x:Name="Podsumowanie"
+                 Click="PodsumowanieClick"/>
         <TextBlock Grid.Row="7" Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" 
-                   Margin="10" Foreground="CornflowerBlue"/>
+                   Margin="10" Foreground="CornflowerBlue" x:Name="Wyswietl"/>
     </Grid>
 </Window>
