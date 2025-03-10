@@ -4,10 +4,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ankieta_preferencji.MainWindow"
-        Title="ankieta_preferencji">
+        Title="ankieta_preferencji"
+        HorizontalAlignment="Center">
     <Grid HorizontalAlignment="Center">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
@@ -33,5 +39,27 @@
         <Button Grid.Row="3" Grid.Column="1" Content="Zatwierdź" 
                 HorizontalAlignment="Right" VerticalAlignment="Center"
                 Margin="0 0 10 0"/>
+        
+        
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Czy lubisz programować?" VerticalAlignment="Center" 
+                   HorizontalAlignment="Right" Margin="5 30 5 5"/>
+        <CheckBox Grid.Row="4" Grid.Column="1" Content="Tak" VerticalAlignment="Center" 
+                  HorizontalAlignment="Center" Margin=" 0 30 0 0"
+                  FontWeight="Bold" />
+        
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Czy masz jakieś zwierzę?" VerticalAlignment="Center" 
+                   HorizontalAlignment="Right" Margin="5"/>
+        <CheckBox Grid.Row="5" Grid.Column="1" Content="Nie" VerticalAlignment="Center" 
+                  HorizontalAlignment="Center"
+                  FontWeight="Bold"/>
+        
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Czy jadłeś śniadanie?" VerticalAlignment="Center" 
+                   HorizontalAlignment="Right" Margin="5"/>
+        <CheckBox Grid.Row="6" Grid.Column="1" Content="Tak" VerticalAlignment="Center" 
+                  HorizontalAlignment="Center" 
+                  FontWeight="Bold"/>
+        
+        
+        
     </Grid>
 </Window>
